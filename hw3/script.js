@@ -1,7 +1,7 @@
 // 定義變數
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
-let x = 0, y = 0, dx = 5, dy = 5, r = 40, color = "lightblue";
+let x = 0, y = 0, dx = 5, dy = 5, r = 30, color = "lightblue";
 let x2 = canvas.width, y2 = 0, dx2 = 5, dy2 = 5, r2 = 20, color2 = "green";
 
 // 畫圓形
