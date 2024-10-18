@@ -33,7 +33,7 @@ function draw()
 	if (x2 > canvas.width || x2 < 0)		dx2 = -dx2;
 	if (y2 > canvas.height ||y2 < 0)		dy2 = -dy2;
 	
-	if ((x-x2)*(x-x2)+(y-y2)*(y-y2) < (r-r2)*(r-r2))		
+	if ((x-x2)*(x-x2)+(y-y2)*(y-y2) < (r+r2)*(r+r2))		
 	{
 		let R = r + r2;
 		[dx,dx2] = [((r-r2)*dx + r2*dx2)/R, ((r2-r)*dx2 + r*dx)/R];
