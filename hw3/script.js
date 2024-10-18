@@ -36,8 +36,8 @@ function draw()
 	if ((x-x2)*(x-x2)+(y-y2)*(y-y2) < (r+r2)*(r+r2))		
 	{
 		let R = r + r2;
-		[dx,dx2] = [((r-r2)*dx + r2*dx2)/R, ((r2-r)*dx2 + r*dx)/R];
-		[dy,dy2] = [((r-r2)*dy + r2*dy2)/R, ((r2-r)*dy2 + r*dy)/R];
+		[dx,dx2] = [((r-r2)*dx + 2*r2*dx2)/R, ((r2-r)*dx2 + r*dx)/R];
+		[dy,dy2] = [((r-r2)*dy + 2*r2*dy2)/R, ((r2-r)*dy2 + r*dy)/R];
     }
 	
 	drawBall(x, y, r, color);
